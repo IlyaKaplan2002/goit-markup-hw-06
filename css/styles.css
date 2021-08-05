@@ -618,9 +618,10 @@ a {
 
 .footer-social-links-section {
   padding-top: 12px;
+  margin-right: 93px;
 }
 
-.footer-social-links-title {
+.footer-title {
   font-weight: 700;
   text-transform: uppercase;
   color: var(--bg-1);
@@ -641,4 +642,8 @@ a {
 .footer .social-link:hover,
 .footer .social-link:focus {
   background-color: var(--hover-color);
+}
+
+.subscribe-section {
+  padding-top: 12px;
 }
