@@ -68,10 +68,63 @@
               <use href="./img/icons.svg#close"></use>
             </svg>
           </button>
+
+          <form class="modal-form">
+            <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+            <label class="modal-label">
+              Имя
+
+              <input type="text" name="name" class="input-field" />
+
+              <svg class="input-icon">
+                <use href="./img/icons.svg#input-name"></use>
+              </svg>
+            </label>
+
+            <label class="modal-label">
+              Телефон
+
+              <input type="tel" name="phone" class="input-field" />
+
+              <svg class="input-icon">
+                <use href="./img/icons.svg#input-phone"></use>
+              </svg>
+            </label>
+
+            <label class="modal-label">
+              Почта
+
+              <input type="email" name="email" class="input-field" />
+
+              <svg class="input-icon">
+                <use href="./img/icons.svg#input-email"></use>
+              </svg>
+            </label>
+
+            <label class="modal-label comment-label">
+              Комментарий
+
+              <textarea name="comment" class="comment" placeholder="Введите текст"></textarea>
+            </label>
+
+            <label class="modal-label agree">
+              <input type="checkbox" class="visually-hidden checkbox" name="agree" />
+
+              <svg class="checkbox-icon">
+                <use href="./img/icons.svg#checkbox"></use>
+              </svg>
+
+              <svg class="checked-icon">
+                <use href="./img/icons.svg#checked"></use>
+              </svg>
+
+              Соглашаюсь с рассылкой и принимаю <a href="#" class="agree-link">Условия договора</a>
+            </label>
+
+            <button type="submit" class="modal-form-submit">Отправить</button>
+          </form>
         </div>
       </div>
-
-      <!-- test -->
 
       <section class="section principles">
         <div class="container">
@@ -422,11 +475,20 @@
         <section class="subscribe-section">
           <h2 class="footer-title">Подпишитесь на рассылку</h2>
 
-          <form action="" class="subscribe-form">
-            <label for="" class="subscribe-email"
-              ><input type="text" class="subscribe-input"
+          <form class="subscribe-form">
+            <label class="subscribe-email"
+              ><input
+                placeholder="E-mail"
+                type="email"
+                name="subscribeEmail"
+                class="subscribe-input"
             /></label>
-            <button type="submit" class="subscribe-button"></button>
+            <button type="submit" class="subscribe-button">
+              Подписаться
+              <svg class="subscribe-icon">
+                <use href="./img/icons.svg#send"></use>
+              </svg>
+            </button>
           </form>
         </section>
       </div>
